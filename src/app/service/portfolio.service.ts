@@ -40,12 +40,12 @@ export class PortfolioService {
       
 }
 
-//   getPortfolio(newPortfolio){
-//   this.storage.get('id,portfolio').then( (result)=>{
-//    console.log('id,portfolio',result)
-//   });
+  getPortfolio(newPortfolio){
+  this.storage.get('id').then( (result)=>{
+   console.log('id',result)
+  });
 
-// }
+}
 
  
    updatePortfolio(id,portfolioObj){

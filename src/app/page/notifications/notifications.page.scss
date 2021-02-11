@@ -7,3 +7,20 @@
   .my-custom-class .action-sheet-group {
     background: #e5e5e5;
   }
+
+  /* DOES NOT WORK - not specific enough */
+ion-loading {
+  color: green;
+}
+
+/* Works - pass "my-custom-class" in cssClass to increase specificity */
+.my-custom-class {
+  color: green;
+}
+  .my-custom-class {
+    --background: #222;
+    --spinner-color:black;
+    --mode:'ios';
+  
+    color:green;
+  }

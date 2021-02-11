@@ -11,6 +11,7 @@ export class FeedPage implements OnInit {
 private slideOpts={
  slidesPerView:3}
 
+ 
  //private selectedItem:any;
  //@ViewChild('buttonSlideEle',{static: true}) buttonSlideEle: IonSlides;
  ngOnInit() {

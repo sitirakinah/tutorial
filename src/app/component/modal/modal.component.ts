@@ -1,13 +1,7 @@
 import { Component, Input, ViewContainerRef } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AlertController, ModalController, ToastController } from '@ionic/angular';
 import { PortfolioService } from 'src/app/service/portfolio.service';
 import { Storage} from '@ionic/storage';
-import { TodoService } from 'src/app/service/todo.service';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { PortfolioPage } from 'src/app/page/portfolio/portfolio.page';
-import { FirebaseService } from 'src/app/service/firebase.service';
-import { create } from 'domain';
 
 @Component({
   selector: 'app-modal',
@@ -18,9 +12,9 @@ export class ModalComponent  {
 
 
    cash: number=null;
-   portfolio: string=null;
-   totalgain: number=null;
-   totalloss: number=null;
+   portfolio: string;
+   totalgain: number;
+   totalloss: number;
    
 
   constructor(
@@ -28,7 +22,7 @@ export class ModalComponent  {
     private storage: Storage,
     private alertCtrl: AlertController,
     private pfs: PortfolioService,
-    public toast: ToastController
+  //  public toast: ToastController
 
     )  
     
@@ -44,7 +38,7 @@ export class ModalComponent  {
 
 }
 
-ngOnInit(): void
+ngOnInit()
 {
   
 }
@@ -83,10 +77,10 @@ newPortfolio={
   
 // }
 async createPortfolio(){
-  console.log(this.newPortfolio.cash);
-  console.log(this.newPortfolio.portfolio);
-  console.log(this.newPortfolio.totalgain);
-  console.log(this.newPortfolio.totalloss)
+  // console.log(this.newPortfolio.cash);
+  // console.log(this.newPortfolio.portfolio);
+  // console.log(this.newPortfolio.totalgain);
+  // console.log(this.newPortfolio.totalloss)
   const alert=await this.alertCtrl.create({
     header:'Tekan Button Submit',
     subHeader: 'Mahersaham',

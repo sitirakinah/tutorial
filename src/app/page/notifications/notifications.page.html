@@ -12,7 +12,19 @@
   <!--ion-list lines="inset"-->
 
 
-    <ion-list inset="true" lines="full">
+  <ion-content slot=""
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+    <!-- <h1>Main Content</h1> -->
+<!-- 
+    <div slot="">
+      <h1></h1>>
+    </div> -->
+</ion-content>
+    <ion-list inset="true" lines="full" slot=""
+    >
     <ion-item href detail>
       <ion-thumbnail class="ion-margin-end">
         <ion-img src="../assets/images/testing/a.png"></ion-img>
@@ -39,5 +51,7 @@
 
     
 </ion-list>
+
+
 
 </ion-content>

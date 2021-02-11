@@ -13,7 +13,10 @@ import { ModalComponent } from 'src/app/component/modal/modal.component';
 })
 export class PortfolioPage {
   
- 
+  // @Input() firstName: string;
+  // @Input() lastName: string;
+  // @Input() middleInitial: string;
+
   
   // portfolio= 
 
@@ -61,6 +64,8 @@ RemoveRecord(){
    
   }
 
+
+  
   // getPortfolio(newPortfolio){
   //   this.storage.get('id').then( (result)=>{
   //  console.log('getPortfolio')
@@ -69,27 +74,46 @@ RemoveRecord(){
 
   // }
 
-
-  
   
 
 
-  async openModal(portfolio){
-    //console.log('open modal')
-    const modal= await this.modalCtrl.create({
-      component: ModalComponent,
-      componentProps: {
-       
-        portfolio:portfolio,
-        cash:'cash',
-        totalloss: portfolio.totalloss,
-        totalgain:portfolio.totalgain
+  doRefresh(event) {
+    console.log('Begin async operation');
 
-      }
-      })
-
-     return await modal.present();
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
   }
+
+  // async openModal(portfolio){
+  //   //console.log('open modal')
+  //   const modal= await this.modalCtrl.create({
+  //     component: ModalComponent,
+  //     componentProps: {
+       
+  //       portfolio:portfolio,
+  //       cash: portfolio.cash,
+  //       totalloss: portfolio.totalloss,
+  //       totalgain:portfolio.totalgain
+
+  //     }
+  //     })
+
+  //    return await modal.present();
+  // }
+
+
+  
+  async openModal() {
+    console.log()
+    const modal = await this.modalCtrl.create({
+      component: ModalComponent,
+      
+    });
+    return await modal.present();
+  }
+
 
 
 // dismissModal().then((data: any)=>{
