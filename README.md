@@ -1,2 +1,1 @@
-# tutorial
-# gitadd
+# tutoriald
