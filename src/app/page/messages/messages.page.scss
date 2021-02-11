@@ -1,0 +1,10 @@
+.slide-card{
+    height:100%;
+    width:100%;
+}
+
+.vertical-slide{
+    background-color:chocolate;
+    //height: calc(100vh -231px);
+    height: max-content;
+}

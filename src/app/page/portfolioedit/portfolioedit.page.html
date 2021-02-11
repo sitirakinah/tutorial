@@ -1,0 +1,50 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title>portfolioedit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content-->
+
+<!--ng-template #elseBook>
+  <ion-card-header>
+    <ion-card-title></ion-card-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col>Edit</ion-col>
+<ion-col>
+  <ion-button fill="solid" color="medium"size="small" click()="item.isEdit=false">Cancel</ion-button>
+</ion-col>
+
+<ion-col>
+  <ion-button fill="solid" color="success"size="small" click()="UpdateRecord(ietm)">Update</ion-button>
+</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-header>
+  <ion-label><stong>Name</stong></ion-label>
+  <ion-input type="text"[(ngModel)]="item.EditName"></ion-input>
+</ng-template-->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button slot="start"></ion-back-button>
+   <ion-title>List Page</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<tr *ngFor="let portfolio of newPortfolio">
+  <td scope="row">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox"></div>
+  </td>
+  <td>{{newPortfolio.cash}}</td>
+  <td>{{newPortfolio.portfolio}}</td>
+  <td>{{newPortfolio.totalgain}}</td>
+  <td>{{newPortfolio.totalloss}}</td>
+  </tr>
+</ion-content>

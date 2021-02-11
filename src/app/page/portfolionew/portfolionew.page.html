@@ -1,0 +1,39 @@
+<!--ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Portfolio Register</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/portfolioedit"-->
+        <!--ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Cash</ion-label>
+    <ion-input type="cash" [(ngModel)]="user.cash" required></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">Portfolio</ion-label>
+    <ion-input type="portfolio"  [(ngModel)]="user.portfolio"required ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Total Gain</ion-label>
+    <ion-input type="totalgain" [(ngModel)]="user.totalgain" required ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Total Loss</ion-label>
+    <ion-input type="totalloss" [(ngModel)]="user.totalloss" required ></ion-input>
+  </ion-item>
+
+
+  <ion-button class="ion-padding" color="primary" expand="full" (click)="createportfolio()">
+    Add Portolio
+  </ion-button>
+</ion-content-->

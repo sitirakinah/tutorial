@@ -1,0 +1,63 @@
+
+<!--ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header-->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+   
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+  <ion-tab-button tab="alert">
+    <ion-icon name="ribbon-outline"></ion-icon>
+    <ion-label>Alert</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="popover">
+    <ion-icon name="send-outline"></ion-icon>
+    <ion-label>Popover</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="radio">
+    <ion-icon name="notifications-outline"></ion-icon>
+    <ion-label>Radio</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="actionsheet">
+    <ion-icon name="folder-outline"></ion-icon>
+    <ion-label>Action Sheet</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="badge">
+    <ion-icon name="albums-outline"></ion-icon>
+    <ion-label>Badge</ion-label>
+  </ion-tab-button>
+
+
+  <ion-tab-button tab="chip">
+    <ion-icon name="basketball-outline"></ion-icon>
+    <ion-label>Chip</ion-label>
+  </ion-tab-button>
+
+  
+  <ion-tab-button tab="datetime">
+  <ion-icon name="calendar-outline">Datetime</ion-icon>
+    <ion-label>Datetime</ion-label>
+  </ion-tab-button>
+
+
+</ion-tab-bar>          
+</ion-tabs>

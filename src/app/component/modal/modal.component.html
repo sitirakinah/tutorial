@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>
+  Portfolio Register
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">CLose</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-content >
+  
+  <ion-item>
+    <ion-label position="floating" colour="primary" >Cash</ion-label>
+  <ion-input [(ngModel)]="newPortfolio.cash" type="number" placeholder="Enter Cash"></ion-input>
+</ion-item>
+
+
+<ion-item>
+  <ion-label position="floating"  colour="primary" >Portfolio</ion-label>
+  <ion-input [(ngModel)]="newPortfolio.portfolio" type="text" placeholder="Enter the Portfolio"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating"  colour="primary" >Total Gain</ion-label>
+  <ion-input [(ngModel)]="newPortfolio.totalgain" type="number"placeholder="Enter Total Gain"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating"   colour="primary" >Total Loss</ion-label>
+  <ion-input [(ngModel)]="newPortfolio.totalloss"type="number" placeholder="Enter Total Loss"></ion-input>
+</ion-item>
+
+
+<ion-button   click)="createPortfolio()" expand="block"  fill="solid" shape="round" color="success" class="ion-margin-top">Submit</ion-button>
+
+</ion-content>
+ 
+
+
+

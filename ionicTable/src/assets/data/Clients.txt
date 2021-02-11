@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Will Smith",
+        "gender": "Male",
+        "country": "USA"
+    },
+    {
+        "name": "Jackline Joy",
+        "gender": "Female",
+        "country": "Sri Lanak"
+    },
+    {
+        "name": "Alu Arjun",
+        "gender": "Male",
+        "country": "Microsoft"
+    },
+    {
+        "name": "Kavitha Kumar",
+        "gender": "Female",
+        "negeri": "Melaka"
+    },
+    {
+        "name": "John Snow",
+        "gender": "Male",
+        "negeri": "Sabah"
+    },
+    {
+        "name": "Priya kanana",
+        "gender": "Female",
+        "negeri": "Kedah"
+    },
+    {
+        "name": "Shri Devi",
+        "gender": "Female",
+        "negeri": "Pinang"
+    },
+    {
+        "name": "Richard Roy",
+        "gender": "Male",
+        "negeri": "Selangor"
+    },
+    {
+        "name": "Sonu Nigam",
+        "gender": "Male",
+        "negeri": "Seremban"
+    },
+    {
+        "name": "Priya Dutt",
+        "gender": "Female",
+        "negeri": "Negeri Sembilan"
+    }
+]

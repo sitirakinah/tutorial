@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <!--ion-slides #slide pager="true" (ionSlideDidChange)="ionSlideDidChange($event)"
+  (ionSlideReachEnd)="ionSlideReachEnd($event)"-->
+ <ion-slides #slide [options]="slideOpts" (ionSlideDidChange)="ionSlideDidChange($event)"
+  (ionSlideReachEnd)="ionSlideReachEnd($event)">
+  <ion-slide class="bg-1">
+  <h1>Mahersaham  0</h1>
+</ion-slide>
+
+<ion-slide class="bg-2">
+  <h1>Mahersaham 1</h1>
+</ion-slide>
+
+<ion-slide class="bg-3">
+  <h1>Mahersaham 2</h1>
+</ion-slide>
+
+</ion-slides>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+  <ion-title>{{text}}</ion-title>
+  </ion-toolbar>
+</ion-footer>

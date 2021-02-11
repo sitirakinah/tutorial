@@ -1,0 +1,75 @@
+
+
+<ion-app>
+ <ion-menu menuId="main-menu" contentId="main">
+  
+   
+   <ion-content>
+    <div class="menu-header-bg"></div>
+   <div class="header-content"> 
+   <img src="../assets/images/logo-mahersaham-crop.png" alt="">
+   <ion-label>
+     <h2> Mahersaham Group</h2>
+     <p> Saham Untuk Semua</p>
+   </ion-label>
+   </div>
+
+   <div class="action-buton">
+   
+<ion-button>
+  <ion-icon slot="start" name="add"></ion-icon> Add User
+</ion-button>
+ </div>
+
+<ion-list class="menu-items" lines="none">
+  <ion-item>
+    <ion-icon name="send-outline"></ion-icon>Messages
+  </ion-item> 
+
+  <!--ion-item  routerLink="notifications"-->
+    <ion-item  routerLink="notifications">
+    <ion-icon name="notifications-outline" slot="start"></ion-icon>Notifications
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="document-outline" ></ion-icon>Portfolio
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Feed
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="settings-outline"></ion-icon>Settings
+  </ion-item>
+
+  <!--ion-item>
+    <ion-icon name="exit-outline"></ion-icon>Sign Out
+  </ion-item-->
+
+  <ion-item routerLink="index">
+    <ion-icon name="exit-outline"></ion-icon>Index
+  </ion-item>
+
+  <ion-item routerLink="home">
+    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Home
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Item
+  </ion-item>
+</ion-list>
+
+
+  </ion-content>
+ </ion-menu>
+ <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
+
+
+
+
+
+
+
+

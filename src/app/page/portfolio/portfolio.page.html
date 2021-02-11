@@ -1,0 +1,131 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    Portfolio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--ion-content class="ion-margin">
+  <ion-grid class="ion-margin">
+    <ion-row>
+      <ion-col>Name</ion-col>
+      <ion-col>Cash</ion-col>
+      <ion-col>Portfolio</ion-col>
+      <ion-col>Total Gain</ion-col>
+      <ion-col>Total Loss</ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+     </ion-row-->
+  
+    <!--ion-row  *ngFor="Let p of portfolio"-->
+      <!--ion-row>
+      <ion-col>{{name}}</ion-col>
+      <ion-col>{{cash}}</ion-col>
+      <ion-col>{{portfolio}}</ion-col>
+      <ion-col>{{totalgain}}</ion-col>
+      <ion-col>{{totalloss}}</ion-col> 
+      <ion-row>
+      <ion-col>
+        <ion-button color="success" (click)="editPortfolio(portfolio)" routerLink='/client-edit/{{client.name}}' name="create">Update</ion-button-->
+        <!--ion-button color="success">Update</ion-button-->
+        
+      <!--/ion-col>
+      <ion-col-->
+        <!--ion-button color="danger">Delete</ion-button-->
+        <!--ion-button color="danger"  (click)="deleteportfolio(portfolio.id)" >delete</ion-button-->
+      <!--/ion-col>
+    </ion-row>
+     
+        
+    </ion-row-->
+
+    
+
+    <!--ion-row>
+      <ion-col>{{ i + 1 }}</ion-col>
+      <ion-col>{{ client.name }}</ion-col>
+      <ion-col>{{ client.gender }}</ion-col>
+      <ion-col>{{ client.country }}</ion-col-->
+   
+        <!--ion-col>C01</ion-col>
+        <ion-col>Asmida</ion-col>
+        <ion-col>Female</ion-col>
+        <ion-col>Melaka</ion-col>
+        <ion-col>
+          <ion-button color="success">Update</ion-button>
+        </ion-col-->
+        
+       <!--/ion-grid-->
+
+
+       <!--ion-card *ngFor="let portfolio of Portfolio " color="primary">
+         <span *ngIf= "!item.isEdit; else elseBlock"></span-->
+
+         <!-- <ion-card-header>
+           <ion-card-title>{{newPortfolio}}}</ion-card-title>
+         </ion-card-header>
+
+         <ion-list>
+           <ion-item>
+             {{newPortfolio}}
+           </ion-item>
+         </ion-list>
+       </ion-card> -->
+    
+       <ion-grid>
+         <ion-row>
+            <ion-col size="3">Cash </ion-col>
+            <ion-col size="3">Portfolio</ion-col>
+            <ion-col size="3">Total Gain </ion-col>
+            <ion-col size="3">Total Loss </ion-col>
+         </ion-row>
+
+
+         <ion-row>
+           <ion-col size="3" ></ion-col>
+          <ion-col size="3" ></ion-col>
+         <ion-col size="3" ></ion-col>
+         <ion-col size="3" ></ion-col>
+         </ion-row>
+       </ion-grid>
+
+       <!-- <ion-content [fullscreen]="true" *ngIf="newPortfolio">
+
+        <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Phone</ion-label>
+          <ion-input color="primary" readonly="true">{{newPortfolio.cash}}</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input color="primary" readonly="true">{{newPortfolio.portfolio}}</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Category</ion-label>
+          <ion-input color="primary" readonly="true">{{newPortfolio.totalgain}}</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Category</ion-label>
+          <ion-input color="primary" readonly="true">{{newPortfolio.totalloss}}</ion-input>
+        </ion-item>
+      </ion-list>
+       </ion-content> -->
+       
+<ion-content>
+  <ion-button shape= "round" color="secondary" size="small" (click)="EditRecord()">
+    <ion-icon size="small" slot="icon-only" name="create"></ion-icon>
+   </ion-button>
+
+    <ion-button shape= "round" color="danger" size="small" (click)="RemoveRecord()">
+    <ion-icon size="small" slot="icon-only" name="trash"></ion-icon>
+   </ion-button>
+</ion-content>
+       
+
+  <ion-content>
+    <ion-button  (click)="openModal()" expand="block"  fill="clear" shape="round" color="success">
+    Add New Portfolio
+    </ion-button>
+  </ion-content>
+    

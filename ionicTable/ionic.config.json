@@ -1,0 +1,7 @@
+{
+  "name": "ionicTable",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

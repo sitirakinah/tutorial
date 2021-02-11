@@ -1,0 +1,52 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title>messages</ion-title>
+  </ion-toolbar>
+</ion-header-->
+
+<ion-content>
+
+</ion-content>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Welcome To MaherSaham Company</ion-card-subtitle>
+    <ion-card-title>Ingat Saham Ingat MaherSaham</ion-card-title>
+  </ion-card-header>
+
+<div class="vertical-slide">
+  <ion-slides pager="false" [options]="vertical-slide">
+    <ion-slide *ngFor= "let item of [1,2,3,4,5]">
+      <ion-card button class="slide-card" mode="ios">
+        <ion-card-header>
+          <ion-card-subtitle>Awesome Subtittle</ion-card-subtitle>
+          <ion-card-title>Awesome Tittle{{item}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-text color="primary">
+            <h3>Selamat Datang ke Mahersaham Group</h3>
+            <h3> Nak Daftar Akaun CDS Boleh hubungi team Client Service dari Mahersaham</h3>
+             <h3> Perkenalkan Remiser Mahersaham iaitu Tuan MaherIlham Bin Alias</h3>
+             <h3> Under brooker M+Plus</h3>
+             <h1>Mahersaham</h1>
+          
+         </ion-text>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+
+    <ion-slide *ngFor= "let item of [6,7,8,9,10]">
+      <ion-card button class="slide-card" mode="ios">
+        <ion-card-header>
+          <ion-card-subtitle>Awesome Likee</ion-card-subtitle>
+          <ion-card-title>Awesome Like{{item}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-text color="primary">
+          Selamat Datang ke Mahersaham Group
+         </ion-text>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</div>

@@ -1,0 +1,112 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/create">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<!--ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-row>
+              <ion-col size="12" *ngIf="isItemAvailable()">
+                {{cur_title}}
+              </ion-col>
+              <ion-button (click)="tambah()">Tambah</ion-button>
+              <ion-button (click)="selepas()">Next</ion-button>
+              
+              <ion-col size="12" *ngFor="let node of product_array">
+                <ion-card>
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col size="10">
+                        <ion-row>
+                          <ion-col size="6"> Title </ion-col>
+                          <ion-col size="6"> {{node.title}} </ion-col>
+                          <ion-col size="6"> Price </ion-col>
+                          <ion-col size="6">
+                            RM {{node.price.toFixed(2)}}
+                          </ion-col>
+                          <ion-col size="6"> Description </ion-col>
+                          <ion-col size="6"> {{node.desc}} </ion-col>
+                        </ion-row>
+                      </ion-col>
+                      <ion-col size="2">
+                        <ion-button>Update</ion-button>
+                        <ion-button>Delete</ion-button>
+                      </ion-col>
+
+                      
+                    </ion-row>
+                  
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-button [routerLink]="signup">SIGN UP</ion-button>
+            </ion-row>
+            <app-update></app-update>
+          </ion-card-header>
+           <ion-card-content-->
+
+
+             
+           <ion-tabs>
+              <ion-tab-bar slot="bottom">
+              <ion-tab-button tab="feed">
+                <ion-icon name="ribbon-outline"></ion-icon>
+                <ion-label>Feed</ion-label>
+              </ion-tab-button>
+
+              <ion-tab-button tab="messages">
+                <ion-icon name="send-outline"></ion-icon>
+                <ion-label>Messages</ion-label>
+              </ion-tab-button>
+
+              <ion-tab-button tab="notifications">
+                <ion-icon name="notifications-outline"></ion-icon>
+                <ion-label>Notifications</ion-label>
+              </ion-tab-button>
+
+              <ion-tab-button tab="settings">
+                <ion-icon name="settings-outline"></ion-icon>
+                <ion-label>Settings</ion-label>
+              </ion-tab-button>
+
+              <ion-tab-button tab="portfolio">
+                <ion-icon name="document-outline"></ion-icon>
+                <ion-label>Portfolio</ion-label>
+              </ion-tab-button>
+
+
+              <ion-tab-button tab="portfolioedit">
+                <ion-icon name="list-circle-outline"></ion-icon>
+                <ion-label>Portfolio Edit</ion-label>
+              </ion-tab-button>
+
+              <ion-tab-button tab="portfolionew">
+                <ion-icon name="document-outline"></ion-icon>
+                <ion-label>Portfolio New</ion-label>
+              </ion-tab-button>
+
+
+            </ion-tab-bar>          
+           </ion-tabs>
+
+
+       
+          
+          
