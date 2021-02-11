@@ -72,9 +72,7 @@ RemoveRecord(){
   //   })
 
 
-  // }
-
-  
+  //
 
 
   doRefresh(event) {
@@ -84,6 +82,7 @@ RemoveRecord(){
       console.log('Async operation has ended');
       event.target.complete();
     }, 2000);
+    console.log('portfolio')
   }
 
   // async openModal(portfolio){
